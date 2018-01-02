@@ -31,7 +31,6 @@ constructor() {
             cache: 'default',
             body: JSON.stringify(test)
         };
-        console.log(myInit.body);
       fetch(currentUrl, myInit)
             .then(res => res.json())
             .catch(function(err) {
@@ -51,7 +50,6 @@ constructor() {
                 <div className="container-fluid">
                   <div className="row">
                     <div className="col-12">
-                    // form - i should to do another component with form :)
                       <form onSubmit={this.handleSubmit.bind(this)} data-toggle="validator" >
                         <div className="form-group">
                           <label htmlFor="email">Email address</label>

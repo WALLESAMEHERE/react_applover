@@ -4,11 +4,11 @@ class Nav extends Component{
   constructor() {
       super();
         this.state = {
-            modalView:false
+            modalView:true
         };
    }
     showModalForm(){
-          this.state.modalView ? this.setState({modalView:false}) : this.setState({modalView:true})
+          (!this.state.modalView) ? this.setState({modalView:true}) : null
           this.props.hideModal(this.state.modalView);
     }
   render(){

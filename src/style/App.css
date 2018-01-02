@@ -6010,10 +6010,11 @@ body {
 
 .slider_box {
   opacity: 0.9;
-  padding: 20px; }
-  .slider_box img {
-    width: 100%;
-    border-radius: 10px; }
+  padding: 20px;
+  background-color: whitesmoke;
+  border-radius: 10px; }
+  .slider_box .row {
+    padding: 5px 0; }
 
 .slick-prev, .slick-next {
   width: 10%; }
@@ -6022,7 +6023,7 @@ body {
     font-size: 70px; }
 
 .slick-prev {
-  left: -21%; }
+  left: -20%; }
 
 .slick-next {
   right: -17%; }
@@ -6047,7 +6048,6 @@ body {
 
 .modal {
   background: rgba(130, 130, 130, 0.5);
-  z-index: 1020;
   transition: 2s; }
   .modal .modal-dialog {
     width: 600px; }
