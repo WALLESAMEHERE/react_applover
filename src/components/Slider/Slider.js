@@ -31,7 +31,6 @@ class SliderContainer extends Component{
       }
     ]
   }
-  
     return (
       <div>
           <section>

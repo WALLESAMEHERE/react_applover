@@ -15,7 +15,6 @@ constructor() {
       });
       this.props.hideModal(this.state.modalView);
    }
-
    handleSubmit(e) {
     e.preventDefault();
     const test = {
@@ -45,8 +44,6 @@ constructor() {
         <div className="modal d-flex align-items-center" >
           <div className="modal-dialog">
             <div className="modal-content ">
-
-
               <div className="modal-header justify-content-center">
                 <h4 className="modal-title">Rejestracja</h4>
               </div>
@@ -54,6 +51,7 @@ constructor() {
                 <div className="container-fluid">
                   <div className="row">
                     <div className="col-12">
+                    // form - i should to do another component with form :)
                       <form onSubmit={this.handleSubmit.bind(this)} data-toggle="validator" >
                         <div className="form-group">
                           <label htmlFor="email">Email address</label>
@@ -76,8 +74,6 @@ constructor() {
                   </div>
                 </div>
               </div>
-
-
             </div>
           </div>
         </div>
