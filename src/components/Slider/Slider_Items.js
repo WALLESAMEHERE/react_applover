@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
+import Ninja from '../../images/ninja.svg'
 
 class Slider_Items extends Component{
   constructor(props){
@@ -81,7 +82,7 @@ render(){
                 </div>
                 <div className="row">
                     <div className="col-12">
-                        <p>img</p>
+                        <img className="w-25 mx-auto"src={Ninja} alt="ninja" />
                     </div>
                 </div>
                 <div className="row">
