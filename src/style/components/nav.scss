@@ -1,0 +1,12 @@
+.nav-item{
+	padding: 5px 20px;
+	transition: .5s;
+	margin: 0 2px;
+	&:hover{
+		background-color:whitesmoke;
+
+	}
+	a:hover{
+		color:black !important;
+	}
+}

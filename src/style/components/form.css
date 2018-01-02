@@ -1,0 +1,21 @@
+.modal-container {
+  position: relative; }
+
+.modal-container .modal, .modal-container .modal-backdrop {
+  position: absolute; }
+
+.modal_toggle {
+  display: block;
+  opacity: 1; }
+
+.modal {
+  background: rgba(130, 130, 130, 0.5);
+  z-index: 1020;
+  transition: 2s; }
+  .modal .modal-dialog {
+    width: 600px; }
+    .modal .modal-dialog .modal-content {
+      overflow: hidden;
+      border-radius: 10px; }
+      .modal .modal-dialog .modal-content .modal-header {
+        background-color: #8bb7c1; }

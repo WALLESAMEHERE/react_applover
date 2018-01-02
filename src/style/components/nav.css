@@ -1,0 +1,8 @@
+.nav-item {
+  padding: 5px 20px;
+  transition: .5s;
+  margin: 0 2px; }
+  .nav-item:hover {
+    background-color: whitesmoke; }
+  .nav-item a:hover {
+    color: black !important; }

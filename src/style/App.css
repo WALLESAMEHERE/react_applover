@@ -5988,5 +5988,71 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
   .hidden-print {
     display: none !important; } }
 
-.dziad {
-  color: red; }
+/* STYLES */
+body {
+  background: url("../images/logonmr.jpg") no-repeat;
+  background-size: cover;
+  background-position: center; }
+
+.nav-item {
+  padding: 5px 20px;
+  transition: .5s;
+  margin: 0 2px; }
+  .nav-item:hover {
+    background-color: whitesmoke; }
+  .nav-item a:hover {
+    color: black !important; }
+
+.slider_cont {
+  height: 100vh; }
+  .slider_cont .slider_cont_center {
+    width: 100%; }
+
+.slider_box {
+  opacity: 0.9;
+  padding: 20px; }
+  .slider_box img {
+    width: 100%;
+    border-radius: 10px; }
+
+.slick-prev, .slick-next {
+  width: 10%; }
+  .slick-prev:before, .slick-next:before {
+    color: white;
+    font-size: 70px; }
+
+.slick-prev {
+  left: -21%; }
+
+.slick-next {
+  right: -17%; }
+
+@media (max-width: 991px) {
+  .slick-prev {
+    left: -29%; } }
+
+@media (max-width: 1199px) {
+  .slick-prev {
+    left: -25%; } }
+
+.modal-container {
+  position: relative; }
+
+.modal-container .modal, .modal-container .modal-backdrop {
+  position: absolute; }
+
+.modal_toggle {
+  display: block;
+  opacity: 1; }
+
+.modal {
+  background: rgba(130, 130, 130, 0.5);
+  z-index: 1020;
+  transition: 2s; }
+  .modal .modal-dialog {
+    width: 600px; }
+    .modal .modal-dialog .modal-content {
+      overflow: hidden;
+      border-radius: 10px; }
+      .modal .modal-dialog .modal-content .modal-header {
+        background-color: #8bb7c1; }
