@@ -7,7 +7,7 @@ class Slider_Items extends Component{
     super(props);
 
 
-  const heroes = [
+  const heros = [
       {
         nick : 'JS Ninja',
         ability : "skakanie między frameworkam'i",
@@ -35,8 +35,8 @@ class Slider_Items extends Component{
     ];
     var arrr = [];
 
-    for(var i in heroes){
-        arrr.push(heroes[i]);
+    for(var i in heros){
+        arrr.push(heros[i]);
     }
     //   for(let i = 0;i<heroes.length;i++){
     //     console.log(heroes[i]);
