@@ -26,13 +26,13 @@
 .slick-next{
 	right: -17%;
 }
-@media (max-width: 991px) {
-	.slick-prev{
-		left: -29%;
-	}
-}
 @media (max-width: 1199px) {
 	.slick-prev{
 		left: -25%;
+	}
+}
+@media (max-width: 991px) {
+	.slick-prev{
+		left: -20%;
 	}
 }

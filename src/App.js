@@ -25,7 +25,7 @@ class App extends Component {
       	  	<SliderContainer />
       	</div>
         );
-  }
+  	}
 }
 export default App;
 
