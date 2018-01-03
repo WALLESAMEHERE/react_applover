@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Slider from 'react-slick';
-import Ninja from '../../images/ninja.svg'
 
 class Slider_Items extends Component{
   constructor(props){
@@ -14,7 +13,8 @@ class Slider_Items extends Component{
         advantage:'nadludzka prędkość pisania',
         gun:'trzy monitory',
         expirience:'wskrzeszanie umarłych stron',
-        spec:'Lazymaster - task runnery to podstawa'
+        spec:'Lazymaster - task runnery to podstawa',
+        avatar:require('../../images/ninja.svg')
       },
       {
         nick: 'Mrs.UX',
@@ -22,7 +22,8 @@ class Slider_Items extends Component{
         advantage:'paleta kolorów w małym paluszku',
         gun:'pełny kubek kawy',
         expirience:'nowy projekt zwiększa paletę kolorów',
-        spec:'Goldmaster - każdy projekt nominowany przez awwwards'
+        spec:'Goldmaster - każdy projekt nominowany przez awwwards',
+        avatar:require('../../images/MrsUX.svg')
       },
       {
         nick : 'BlindHat',
@@ -30,7 +31,8 @@ class Slider_Items extends Component{
         advantage:'nocny marek',
         gun:'nexus 5 + kali linux NetHunter',
         expirience:'cracowanie gier + niewidzialność w sieci',
-        spec:'Lockmaster - żadne hasło nie jest problemem'
+        spec:'Lockmaster - żadne hasło nie jest problemem',
+        avatar:require('../../images/hax.svg')
       }
     ];
     var arrr = [];
@@ -43,6 +45,7 @@ class Slider_Items extends Component{
     //     return (<div className="slider_box">{heroes[i].gun}</div>);
     // }
     this.state = {arrr};
+    console.log(arrr[1].avatar)
     }
 render(){
     const settings = {
@@ -75,6 +78,7 @@ render(){
           <Slider {...settings} className="center text-center">
             {this.state.arrr.map((person, index) => 
               <div key={index} className="slider_box">
+              <h1>Super Hero</h1>
                 <div className="row">
                     <div className="col-12">
                         <h2 className="bg-danger display-4 py-2 text-white">{person.nick}</h2>
@@ -82,7 +86,7 @@ render(){
                 </div>
                 <div className="row">
                     <div className="col-12">
-                        <img className="w-25 mx-auto"src={Ninja} alt="ninja" />
+                        <img className="w-25 mx-auto"src={person.avatar} alt="ninja" />
                     </div>
                 </div>
                 <div className="row">
